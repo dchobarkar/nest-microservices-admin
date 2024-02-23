@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { ClientsModule, Transport } from '@nestjs/microservices';
 
 import { ProductController } from './product.controller';
 import { ProductService } from './product.service';
 import { Product } from './product.entity';
-import { ClientsModule, Transport } from '@nestjs/microservices';
 
 @Module({
   imports: [

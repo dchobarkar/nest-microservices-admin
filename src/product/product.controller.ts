@@ -8,9 +8,9 @@ import {
   Post,
   Put,
 } from '@nestjs/common';
+import { ClientProxy } from '@nestjs/microservices';
 
 import { ProductService } from './product.service';
-import { ClientProxy } from '@nestjs/microservices';
 
 @Controller('products')
 export class ProductController {
